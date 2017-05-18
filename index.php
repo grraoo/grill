@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <?echo "КУКУ!"?>
   <div class="container">
     <header class="main-header">
       <a href="" class="main-logo">
