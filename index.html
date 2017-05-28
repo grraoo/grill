@@ -74,6 +74,7 @@
       </div>
     </header>
     <h1 class="headline-banner">Популярные товары</h1>
+
     <article class="product">
       <img src="img/assorti.jpg" alt="" class="product__img">
       <div class="product__description">
@@ -163,12 +164,52 @@
         </h2>
       </section>
     </footer>
+    <section class="modal-call">
+      <button type="button" class="modal-call__close">
+        <span>закрыть</span>
+      </button>
+      <form class="modal-call__wrap" action="" method="post">
+        <h2 class="modal-call__name">Заказ обратного звонка</h2>
+        <div class="modal-call__text">
+          Заполните поля ниже и нажмите кнопку “Отправить”. Наш администратор свяжется с вами в течение 15 минут.
+        </div>
+        <p class="modal-call__field">
+          <input type="text" class="modal-call__input" id="name" placeholder="Имя">
+          <label for="name" class="modal-call__label">Имя</label>
+        </p>
+
+        <p class="modal-call__field">
+          <input type="text" class="modal-call__input" id="phone" required placeholder="Телефон*">
+          <label for="phone" class="modal-call__label">Телефон*</label>
+        </p>
+
+        <button class="btn btn--call" type="submit">Отправить заявку</button>
+        <div class="modal-call__text">
+          Поля, помеченные (*) обязательны для заполнения
+        </div>
+
+      </form>
+    </section>
   </div>
+
+
   <script>
     var openMenu = document.querySelector('.menu-control');
+    var modalCall = document.querySelector('.modal-call');
+    var modalCallOpen = document.querySelector('.main-menu .btn');
+    var modalCallClose = document.querySelector('.modal-call__close');
       openMenu.addEventListener('click', function() {
         this.classList.toggle('menu-control--active');
-      })
+      });
+
+      modalCallOpen.addEventListener('click', function(){
+        modalCall.classList.add('modal-call--open');
+        openMenu.classList.remove('menu-control--active');
+      });
+
+      modalCallClose.addEventListener('click', function(){
+        modalCall.classList.remove('modal-call--open');
+      });
   </script>
 </body>
 
