@@ -190,6 +190,47 @@
 
       </form>
     </section>
+    <section class="cart">
+      <div class="cart__content">
+        <div class="cart__qnt">
+          2
+        </div>
+        <div class="cart__price">
+          1230 руб.
+        </div>
+        <button class="btn btn--cart">
+          Заказать
+        </button>
+      </div>
+      <div class="cart__overlay">
+        <div class="cart__inner">
+          <h2 class="cart__order-name">
+            Мой заказ
+          </h2>
+          <ul class="cart__list">
+            <li class="cart__item">
+              <h3 class="cart__item-name">Ассорти из люля-кебаб с овощами гриль</h3>
+              <div class="cart__item-order">
+                <div class="cart__item-price">
+                  1 600 руб.<br>за шт.
+                </div>
+                <div class="cart__buy">
+                  <span class="cart__qnt-control">-</span>
+                  <input type="text" class="cart__item-qnt" value="1">
+                  <span class="cart__qnt-control">+</span>
+                </div>
+                <div class="cart__item-sum">
+                  Сумма:<br> 3 200 руб.
+                </div>
+                <div class="cart__item-del"></div>
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
 
 
@@ -198,6 +239,11 @@
     var modalCall = document.querySelector('.modal-call');
     var modalCallOpen = document.querySelector('.main-menu .btn');
     var modalCallClose = document.querySelector('.modal-call__close');
+    var cartOpen = document.querySelector('.btn--buy');
+    var cart = document.querySelector('.cart');
+    var del = document.querySelector('.cart__item-del');
+
+
       openMenu.addEventListener('click', function() {
         this.classList.toggle('menu-control--active');
       });
@@ -209,6 +255,14 @@
 
       modalCallClose.addEventListener('click', function(){
         modalCall.classList.remove('modal-call--open');
+      });
+
+      cartOpen.addEventListener('click', function(){
+        cart.style.display="block";
+      });
+
+      del.addEventListener('click', function(){
+        cart.removeAttribute('style');
       });
   </script>
 </body>
