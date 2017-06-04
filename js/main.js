@@ -1,3 +1,15 @@
+
+
+// var vp = document.querySelector('[name="viewport"]');
+// vp.setAttribute('content',"width=device-width, initial-scale=1, minimum-scale=1");
+// vp.setAttribute('content',"width=device-width, initial-scale="+(window.innerWidth/320)+", minimum-scale="+(window.innerWidth/320));
+// window.addEventListener('resize', function(){
+// vp.setAttribute('content',"width=device-width, initial-scale="+(window.innerWidth/320)+", minimum-scale="+(window.innerWidth/320));
+
+// })
+// console.log(window.innerWidth);
+// console.log(vp.getAttribute('content'));
+
 var openMenu = document.querySelector('.menu-control');
 var modalCall = document.querySelector('.modal-call');
 var modalCallOpen = document.querySelector('.main-menu .btn');
