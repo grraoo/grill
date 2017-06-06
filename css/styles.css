@@ -719,7 +719,7 @@ template {
   top: 0;
   left: 0;
   display: none;
-  width: 100%;
+  width: 320px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
@@ -865,7 +865,7 @@ template {
   top: 0;
   left: 0;
   display: none;
-  width: 100%;
+  width: 320px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
@@ -1026,7 +1026,7 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 320px;
   padding: 10px 15px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.1);
